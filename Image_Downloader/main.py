@@ -3,11 +3,25 @@ import requests,bs4,os
 
 # get_the_link=input("Enter The Word : ")
 
-def get_the_Search():
+def get_the_Search(Asif):
     cse_id="605b2f7696f594e3b"
+    api_key="AIzaSyDlOgaAGZX2bN1jUP99dpNceTbIh_wV_lY" 
+    
+    url = f"https://www.googleapis.com/customsearch/v1?q={Asif} animal&num=10&start=1&imgSize=huge&searchType=image&key={api_key}&cx={cse_id}" 
+    
+    response=requests.get(url) 
+    get_json=response.json()
+    get_link=get_json['items'][3]['link']
+    
+    print(get_link)
+     
     
 def get_path_save_file(path,file_name):
     os.mkdir(path+"\\"+file_name)
+
+get_the_Search("cat")
+
+
 
 
 
