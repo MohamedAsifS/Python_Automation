@@ -1,6 +1,6 @@
-# Asif's Python Automation Project
+# Asif's  Automation Project
 
-Welcome to the Python Automation Project! This repository features a collection of Python scripts designed to automate a variety of tasks.
+Welcome to the Automation Project! This repository features a collection of Python scripts designed to automate a variety of tasks.
 
 ---
 
